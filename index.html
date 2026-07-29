@@ -244,6 +244,7 @@ th { background: #f6f8fc; color: #586276; font-weight: 800; position: sticky; to
 .clean-row span:last-child { font-weight: 850; }
 
 footer { padding: 24px; text-align: center; color: #7b8496; font-size: 12px; border-top: 1px solid var(--line); }
+.creator-credit { margin-top: 8px; color: #4f5a70; font-weight: 800; letter-spacing: -0.01em; }
 dialog { border: 0; border-radius: 18px; max-width: 620px; width: calc(100% - 32px); box-shadow: 0 20px 70px rgba(12,20,45,.28); padding: 0; }
 dialog::backdrop { background: rgba(18, 25, 47, .58); backdrop-filter: blur(3px); }
 dialog form { padding: 22px; }
@@ -283,7 +284,7 @@ dialog form { padding: 22px; }
 }
 
 @media print {
-  .topbar, .data-panel, .tabs, .top-actions, .group-toolbar, .network-controls, footer, button { display: none !important; }
+  .topbar, .data-panel, .tabs, .top-actions, .group-toolbar, .network-controls, button { display: none !important; }
   body { background: white; }
   .app-shell { max-width: none; padding: 0; }
   .tab-panel { display: block !important; page-break-before: always; }
@@ -578,7 +579,8 @@ dialog form { padding: 22px; }
   </main>
 
   <footer>
-    <strong>우리반 관계나침반</strong> · 데이터는 서버로 전송하지 않고 브라우저에서 분석합니다. 결과를 공개하거나 학생 평가·처벌의 근거로 사용하지 마세요.
+    <div><strong>우리반 관계나침반</strong> · 데이터는 서버로 전송하지 않고 브라우저에서 분석합니다. 결과를 공개하거나 학생 평가·처벌의 근거로 사용하지 마세요.</div>
+    <div class="creator-credit">제작: 천안쌍정초등학교 김은서</div>
   </footer>
 
   <dialog id="privacyDialog">
